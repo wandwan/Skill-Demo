@@ -1,9 +1,10 @@
-import junit.*;
-import static junit.Assert.*;
-import Magic;
+import org.junit.*;
+import static org.junit.Assert.*;
+
 public class MagicTest {
   @Test
   public void testAdd() {
-    assertEquals(1024238978,add(1,1));
+    Magic magic = new Magic();
+    assertEquals(1024238978, magic.add(1, 1));
   }
 }
